@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Image zoom</title>
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body>
+		
+		<h1>Zooming photos</h1>
+		
+		<form id="myForm">
+		  <p>Please select an image file (png, jpg, etc..)</p>
+		  <input type="file" name="img" id="fileinput" accept="image/*" onchange="showImage(event)" required>
+		  <label for="fileinput">Choose a file..</label>
+		</form>
+		<div id="preview">
+			<img id="loadedImage" onmouseover="changeCursor(event)">
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,36 @@
+input[type="file"] { 
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
+
+#preview {
+	margin: 50px;
+	height: 400px;
+	width: 400px;
+}
+
+#loadedImage {
+	display: block;
+	max-height:200px;
+	max-width:200px;
+	position: relative;
+	top: 50%;
+	left: 50%;  
+	transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+}
+
+label{
+	cursor: pointer;
+	width: 150px;
+	height: 30px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #f49242;
+}
+
+label:hover {
+	background-color: gray;
+}
